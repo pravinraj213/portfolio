@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Official portfolio of Pravinraj P - CSBS Student at Rajalakshmi Engineering College, and a Reliance Foundation UG Scholar. Focused on DSA, problem-solving, and tech-driven growth.">
+  <meta name="keywords" content="Pravinraj, Rajalakshmi Engineering College, RF Scholar, DSA, Python, CSBS, REC, Chennai, Engineering Student">
+  <meta name="author" content="Pravinraj P">
+  <title>Pravinraj P - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <style>
+    :root {
+      --primary: #0a66c2;
+      --primary-light: #e8f2fc;
+      --secondary: #1a1a1a;
+      --text: #333;
+      --text-light: #666;
+      --bg: #f8fafc;
+      --white: #fff;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      --border-radius: 12px;
+      --transition: all 0.3s ease;
+      --font-size-base: 1rem;
+      --font-size-large: 2.5rem;
+      --font-size-medium: 1.2rem;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        transition: none !important;
+        animation: none !important;
+        scroll-behavior: auto !important;
+      }
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: var(--font-size-base);
+    }
+    
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      box-shadow: var(--shadow);
+      z-index: 1000;
+      transition: var(--transition);
+    }
+    
+    header.scrolled {
+      padding: 0.75rem 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    
+    header h1 {
+      font-size: 1.6rem;
+      color: var(--primary);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    header h1 i {
+      font-size: 1.4rem;
+      aria-hidden: "true";
+    }
+    
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: var(--text-light);
+      font-weight: 600;
+      position: relative;
+      padding: 0.5rem 0;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+    
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 2px;
+      background: var(--primary);
+      transition: var(--transition);
+    }
+    
+    nav a.active,
+    nav a:hover {
+      color: var(--primary);
+    }
+    
+    nav a.active::after,
+    nav a:hover::after {
+      width: 100%;
+    }
+    
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, var(--primary-light) 0%, var(--white) 100%);
+    }
+    
+    .hero-content {
+      max-width: 800px;
+    }
+    
+    .hero h2 {
+      font-size: var(--font-size-large);
+      margin-bottom: 1rem;
+      color: var(--secondary);
+    }
+    
+    .hero p {
+      font-size: var(--font-size-medium);
+      color: var(--text-light);
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.8rem;
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition);
+      border: 2px solid var(--primary);
+    }
+    
+    .btn:hover {
+      background: transparent;
+      color: var(--primary);
+      transform: translateY(-3px);
+    }
+    
+    .btn-outline {
+      background: transparent;
+      color: var(--primary);
+    }
+    
+    .btn-outline:hover {
+      background: var(--primary);
+      color: var(--white);
+    }
+    
+    main {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    section {
+      background: var(--white);
+      border-radius: var(--border-radius);
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+      opacity: 1; /* Changed from 0 to 1 to show immediately */
+      transform: translateY(0); /* Changed from 20px to 0 to show immediately */
+    }
+    
+    h2 {
+      color: var(--primary);
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+    }
+    
+    h2::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 50%;
+      height: 4px;
+      background: var(--primary);
+      border-radius: 2px;
+    }
+    
+    h3 {
+      font-size: 1.3rem;
+      margin: 1.5rem 0 0.5rem;
+      color: var(--secondary);
+    }
+    
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+      color: var(--text);
+      line-height: 1.7;
+    }
+    
+    a.link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+    
+    a.link:hover {
+      text-decoration: underline;
+      opacity: 0.9;
+    }
+    
+    ul.skills-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    
+    ul.skills-list li {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 0.6rem 1.3rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: var(--transition);
+    }
+    
+    ul.skills-list li:hover {
+      background: var(--primary);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+    
+    .education-content {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+    
+    .education-content img {
+      width: 80px;
+      height: 80px;
+      border-radius: var(--border-radius);
+      object-fit: cover;
+      border: 1px solid #eee;
+      box-shadow: var(--shadow);
+      alt: "Rajalakshmi Engineering College Logo";
+    }
+    
+    .education-details {
+      flex: 1;
+    }
+    
+    .education-details p {
+      margin-bottom: 0.7rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .education-details p i {
+      color: var(--primary);
+      width: 20px;
+      text-align: center;
+      aria-hidden: "true";
+    }
+    
+    .connect-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-top: 2rem;
+      align-items: center; /* Center align the connect buttons */
+    }
+    
+    .connect-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.9rem 1.8rem;
+      border: 2px solid var(--primary);
+      border-radius: 50px;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition);
+      max-width: 300px;
+      width: 100%;
+      justify-content: center; /* Center the content inside buttons */
+    }
+    
+    .connect-links a i {
+      font-size: 1.2rem;
+      transition: var(--transition);
+      aria-hidden: "true";
+    }
+    
+    .connect-links a:hover {
+      background: var(--primary);
+      color: var(--white);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(10, 102, 194, 0.2);
+    }
+    
+    .connect-links a:hover i {
+      color: var(--white);
+    }
+    
+    .scholarship-highlight {
+      background: var(--primary-light);
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      margin: 1.5rem 0;
+      border-left: 4px solid var(--primary);
+    }
+    
+    .scholarship-highlight p {
+      margin-bottom: 0;
+      color: var(--text);
+      font-weight: 500;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      background: var(--primary);
+      color: var(--white);
+      font-weight: 500;
+      margin-top: 3rem;
+    }
+    
+    footer p {
+      color: var(--white); /* Changed from black to white */
+      margin-bottom: 0.5rem;
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .social-links a {
+      color: var(--white);
+      font-size: 1.3rem;
+      transition: var(--transition);
+    }
+    
+    .social-links a:hover {
+      transform: translateY(-3px);
+      opacity: 0.8;
+    }
+    
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 50px;
+      height: 50px;
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      text-decoration: none;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      box-shadow: 0 5px 15px rgba(10, 102, 194, 0.3);
+      z-index: 999;
+    }
+    
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .back-to-top:hover {
+      transform: translateY(-5px);
+      background: var(--secondary);
+    }
+    
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+      }
+      
+      nav {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .hero h2 {
+        font-size: 2rem;
+      }
+      
+      .hero p {
+        font-size: 1.1rem;
+      }
+      
+      section {
+        padding: 1.5rem;
+      }
+      
+      .education-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+      }
+      
+      .education-details p {
+        justify-content: center;
+	display: inline-block;
+      }
+      
+      .connect-links a {
+        max-width: 100%;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+      
+      h2 {
+        font-size: 1.5rem;
+      }
+      
+      .btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+      }
+      
+      .back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        bottom: 1rem;
+        right: 1rem;
+      }
+      
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <h1><i class="fas fa-code" aria-hidden="true"></i> Pravinraj P</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#scholarship">Scholarship</a>
+        <a href="#connect">Connect</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h2>Hello, I'm Pravinraj P</h2>
+        <p>Computer Science and Business Systems student | Reliance Foundation UG Scholar | Passionate about technology and innovation</p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn">Learn More</a>
+          <a href="#connect" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm <strong>Pravinraj P</strong>, a first-year CSBS (Computer Science and Business Systems) student at <a class="link" href="https://www.rajalakshmi.org/" target="_blank" rel="noopener noreferrer">Rajalakshmi Engineering College</a> in Chennai, India.</p>
+        <p>I'm deeply passionate about the intersection of technology and business, constantly exploring how innovative solutions can drive meaningful change. My academic journey is fueled by curiosity and a commitment to excellence.</p>
+        <p>As a proud <a class="link" href="https://scholarships.reliancefoundation.org/" target="_blank" rel="noopener noreferrer">Reliance Foundation Undergraduate Scholar (2024–25)</a>, I'm honored to be recognized for my potential and dedication. This prestigious scholarship motivates me to push boundaries and make a positive impact through technology.</p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <p>I'm continuously expanding my technical and professional skill set:</p>
+        <ul class="skills-list">
+          <li><i class="fas fa-brain" aria-hidden="true"></i> Problem Solving</li>
+          <li><i class="fas fa-project-diagram" aria-hidden="true"></i> Data Structures</li>
+          <li><i class="fab fa-python" aria-hidden="true"></i> Python</li>
+          <li><i class="fab fa-java" aria-hidden="true"></i> Java</li>
+          <li><i class="fas fa-code" aria-hidden="true"></i> Web Development</li>
+          <li><i class="fas fa-cloud" aria-hidden="true"></i> Cloud Computing</li>
+          <li><i class="fab fa-linux" aria-hidden="true"></i> Linux</li>
+          <li><i class="fab fa-git-alt" aria-hidden="true"></i> Git & GitHub</li>
+          <li><i class="fas fa-database" aria-hidden="true"></i> SQL</li>
+          <li><i class="fas fa-chart-line" aria-hidden="true"></i> Business Analytics</li>
+          <li><i class="fas fa-users" aria-hidden="true"></i> Team Leadership</li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="education-content">
+          <div class="education-details">
+            <h3>Rajalakshmi Engineering College</h3>
+            <p><i class="fas fa-graduation-cap" aria-hidden="true"></i> <strong>Degree:</strong> B.Tech in Computer Science and Business Systems (CSBS)</p>
+            <p><i class="fa-solid fa-ranking-star"></i></i> <strong>CGPA:</strong> 8.55 (First Year)</p>
+            <p><i class="fas fa-calendar-alt" aria-hidden="true"></i> <strong>Duration:</strong> 2024 – 2028 (Expected)</p>
+            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong>Location:</strong> Chennai, Tamil Nadu</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="scholarship">
+        <h2>Scholarship</h2>
+        <h3>Reliance Foundation Undergraduate Scholar</h3>
+        <p>Awarded the prestigious Reliance Foundation Undergraduate Scholarship for the duration of my B.Tech program in Computer Science and Business Systems.</p>
+        
+        <div class="scholarship-highlight">
+          <p><strong>Value:</strong> ₹2,00,000 (covering tuition and academic expenses)</p>
+          <p><strong>Duration:</strong> Entire undergraduate program (2024-2028)</p>
+        </div>
+        
+        <p>This highly competitive scholarship recognizes academic excellence, leadership potential, and commitment to innovation. As one of the select recipients nationwide, I'm part of an elite community of scholars with access to mentorship, networking opportunities, and skill development programs.</p>
+        <p>The scholarship not only provides financial support but also motivates me to maintain high academic standards while contributing to technological advancement and social impact initiatives.</p>
+      </section>
+
+      <section id="connect">
+        <h2>Connect With Me</h2>
+        <p>I'm always open to discussing technology, collaboration opportunities, or just connecting with like-minded individuals. Feel free to reach out!</p>
+        
+        <div class="connect-links">
+          <a href="https://in.linkedin.com/in/pravinraj213" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            Connect on LinkedIn
+          </a>
+          <a href="mailto:pravinrajp2397@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            Send me an Email
+          </a>
+          <a href="https://github.com/pravinraj213">
+            <i class="fab fa-github" aria-hidden="true"></i>
+            View my GitHub
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-links">
+        <a href="https://twitter.com/pravinraj213" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/pravinraj213" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://leetcode.com/pravinraj213" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+      </div>
+      <p>© 2025 Pravinraj P — All Rights Reserved</p>
+      <p>Tamil Nadu, India</p>
+    </footer>
+
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+  </div>
+
+  <script>
+    const sections = document.querySelectorAll('section:not(.hero)');
+    const navLinks = document.querySelectorAll('nav a');
+    const backToTop = document.getElementById('backToTop');
+    const header = document.querySelector('header');
+    let isScrolling;
+
+    // Active nav link functionality
+    function updateActiveNav() {
+      let current = '';
+      sections.forEach(section => {
+        if (window.scrollY >= section.offsetTop - 150) {
+          current = section.id;
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        link.removeAttribute('aria-current');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+          link.setAttribute('aria-current', 'page');
+        }
+      });
+    }
+
+    // Back to top button visibility
+    function updateBackToTop() {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    }
+
+    // Header scroll effect
+    function updateHeader() {
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }
+
+    // Combined scroll handler with throttling
+    function onScroll() {
+      if (!isScrolling) {
+        window.requestAnimationFrame(() => {
+          updateActiveNav();
+          updateBackToTop();
+          updateHeader();
+          isScrolling = false;
+        });
+        isScrolling = true;
+      }
+    }
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    window.addEventListener('scroll', onScroll);
+    
+    // Initialize on load
+    document.addEventListener('DOMContentLoaded', () => {
+      updateActiveNav();
+      updateBackToTop();
+      updateHeader();
+    });
+  </script>
+</body>
+</html>
