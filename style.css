@@ -478,4 +478,19 @@ footer p {
     flex-direction: column;
     align-items: center;
   }
+
+  /* === GeeksforGeeks Icon Styling === */
+ .gfg-icon img {
+  width: 24px;
+  height: 24px;
+  transition: var(--transition);
+  filter: brightness(0) invert(1); /* makes the black icon white */
+}
+
+ .gfg-icon:hover img {
+  filter: brightness(1) invert(0); /* revert to original black on hover */
+  transform: translateY(-3px);
+  opacity: 0.8;
+}
+
 }
