@@ -543,3 +543,10 @@ footer p {
   transform: scale(1.1);
 }
 
+.leetcode-icon,
+.leetcode-icon svg {
+  width: 24px;      /* or any visible size */
+  height: 24px;
+  display: inline-block;
+  fill: currentColor; /* so it matches text color */
+}
