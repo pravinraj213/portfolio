@@ -221,9 +221,28 @@
         }
 
         @media (max-width: 480px) {
+            .hero {
+                align-items: flex-start;
+                padding-top: 10vh;
+                text-align: left;
+            }
+
+            .hero-content {
+                transform: none;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                margin-left: 0;
+                text-align: left;
+            }
+
             .hero-buttons {
                 flex-direction: column;
-                align-items: center;
+                align-items: flex-start; /* Adjusted to align buttons to the left */
                 gap: 1rem;
             }
             .hero-buttons .btn {
@@ -804,12 +823,20 @@
             <p>Chennai, Tamil Nadu, India</p>
         </footer>
 
-        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <button class="back-to-top" id="backToTop" aria-label="Back to top" onclick="scrollToTop()">
             <i class="fas fa-arrow-up" aria-hidden="true"></i>
         </button>
     </div>
 
     <script>
+        // Smooth scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        }
+
         // Mobile Menu Toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const nav = document.querySelector('nav');
