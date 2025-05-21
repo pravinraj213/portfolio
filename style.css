@@ -531,10 +531,15 @@ footer p {
         gap: 1rem; /* Smaller gap in footer social links on mobile */
     }
 
-    .gfg-icon {
-      width: 32px;
-      height: 32px;
-      display: inline-block;
-      vertical-align: middle;
-    }
+    .social-icon {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
 
