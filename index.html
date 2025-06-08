@@ -195,15 +195,14 @@
 
         /* Hero section styling: full height, center content */
         .hero {
-            height: 100vh;
-            min-height: 700px;
+            height: 150vh; /* Make hero section taller than viewport to ensure scroll */
             display: flex;
-            align-items: center; /* Vertically center content */
+            align-items: center; /* Vertically center content within this 150vh section */
             justify-content: center; /* Horizontally center content */
             text-align: center;
             padding: 2rem;
             position: relative;
-            overflow: hidden;
+            overflow: hidden; /* Keep overflow hidden for any internal elements */
         }
 
         /* Hero content container */
@@ -211,9 +210,9 @@
             max-width: 800px;
             position: relative;
             z-index: 1;
-            /* Adjust padding to fine-tune vertical spacing if needed */
-            padding-top: 2rem; /* Added padding to ensure space above content */
-            padding-bottom: 2rem; /* Added padding to ensure space below content */
+            /* Revert padding-top, flexbox handles centering within the hero container */
+            padding-top: 2rem; 
+            padding-bottom: 2rem; 
         }
 
         /* Hero heading styling */
@@ -300,7 +299,7 @@
             flex-grow: 1; /* Allows main to expand and push footer down */
             padding: 4rem 1rem;
             max-width: 1200px;
-            margin: 0 auto; /* Center main content */
+            margin: auto; /* Center main content */
             width: 100%;
         }
 
@@ -623,7 +622,7 @@
             .hero-content {
                 max-width: none; /* Remove max-width constraint for better left alignment */
                 text-align: left; /* Ensure text inside hero-content is left-aligned */
-                padding: 2rem 1rem; /* Increased vertical and horizontal padding for content */
+                padding: 2rem 1rem; /* Revert to a normal padding */
                 margin-left: 0; /* Remove auto margins to left-align */
                 margin-right: 0; /* Remove auto margins to left-align */
             }
@@ -702,6 +701,10 @@
                 text-align: left; /* Center align hero content */
                 align-items: center; /* Center align items */
                 min-height: 500px; /* Adjust min-height for very small screens */
+            }
+
+            .hero-content {
+                padding: 2rem 1rem; /* Revert to a normal padding */
             }
 
             .hero h2 {
@@ -960,6 +963,40 @@
                     });
                 }
             });
+        });
+
+        // Scroll to center the hero content vertically on page load
+        window.addEventListener('load', () => {
+            const heroContent = document.querySelector('.hero-content');
+            const headerElement = document.querySelector('header');
+            const headerHeight = headerElement ? headerElement.clientHeight : 0; // Get header height, default to 0 if not found
+            const viewportHeight = window.innerHeight;
+
+            if (heroContent) {
+                // Get the current bounding rectangle of the hero content to determine its size and position
+                const heroContentRect = heroContent.getBoundingClientRect();
+                
+                // Calculate the absolute top position of the hero content relative to the document
+                // This is heroContentRect.top (relative to viewport) + current scroll position
+                const currentAbsoluteContentTop = heroContentRect.top + window.scrollY; 
+
+                // Calculate the vertical midpoint of the hero content
+                const heroContentMidpoint = currentAbsoluteContentTop + (heroContentRect.height / 2);
+
+                // Calculate the vertical midpoint of the *visible* viewport (below the header)
+                // Visible viewport height = viewportHeight - headerHeight
+                // Midpoint of visible viewport = headerHeight + (viewportHeight - headerHeight) / 2
+                const visibleViewportMidpoint = headerHeight + (viewportHeight - headerHeight) / 2;
+
+                // The target scroll position is the difference between where the hero content's midpoint currently is,
+                // and where we want it to be (visible viewport's midpoint), adjusted by the current scroll.
+                const targetScrollTop = heroContentMidpoint - visibleViewportMidpoint;
+
+                window.scrollTo({
+                    top: targetScrollTop,
+                    behavior: 'smooth'
+                });
+            }
         });
     </script>
 </body>
