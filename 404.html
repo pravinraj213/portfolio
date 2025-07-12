@@ -198,9 +198,28 @@
           <a href="https://instagram.com/prav.inraj213" target="_blank" aria-label="Instagram">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="mailto:pravinrajp2397@gmail.com" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
+          <span id="email-link" aria-label="Email">
+  <i class="fas fa-envelope"></i>
+</span>
+
+<noscript>
+  <p>Email: pravinrajp [dot] gmail [dot] com (enable JavaScript to click)</p>
+</noscript>
+
+<script>
+  // Obfuscate email parts
+  const user = "pravinrajp2397";
+  const domain = "gmail.com";
+  const email = user + "@" + domain;
+
+  const link = document.createElement("a");
+  link.href = "mailto:" + email;
+  link.innerHTML = '<i class="fas fa-envelope"></i>';
+
+  const container = document.getElementById("email-link");
+  container.replaceWith(link);
+</script>
+          
         </div>
       </div>
     </div>
