@@ -1,45 +1,45 @@
-# 👋 Hi, I'm Pravinraj P
+# 🌐 Pravinraj P – Portfolio
 
-🎓 **Computer Science and Business Systems (CSBS)** student at **Rajalakshmi Engineering College**, Chennai  
-☁️ **Cloud Engineering**, 🔒 **Cybersecurity**, and 🤖 **AI-based Tools** enthusiast  
-📍 India | 🧠 Always Learning | 🚀 Always Building
-
----
-
-## 🔍 About Me
-
-I'm **Pravinraj P** — an aspiring **Cloud Engineer** and **Cybersecurity Specialist** working on secure, scalable, and human-centered tech solutions.
-
-Currently learning:
-- AWS IAM & Cloud Infrastructure
-- Python for Security & Automation
-- Vulnerability assessment and CTFs
-- Building AI-powered tools using OpenAI & Gemini APIs
-
-🧪 I'm building real-world projects and participating in simulations (like Deloitte’s Cybersecurity Virtual Experience) to sharpen my skills.
+Hi! I'm **Pravinraj P**, a second-year Computer Science and Business Systems (CSBS) student at **Rajalakshmi Engineering College**, Chennai.  
+This is my **personal portfolio website**, built to showcase my journey in **Cloud**, **Cybersecurity**, and **AI-driven ethical tech**.
 
 ---
 
-## 💼 Portfolio & Projects
+## 🔗 Live Website
 
-🔗 [Visit My Portfolio Website](https://pravinraj213.github.io)
-
-💡 Featured Projects:
-- Phishing Simulation Webpage
-- Python Scripting Toolkit for Recon
-- Cloud Cost Estimator (WIP)
-- CTF Writeups & TryHackMe Labs
+🌍 [pravinraj213.netlify.app](https://pravinraj213.netlify.app)
 
 ---
 
-## 📫 Let's Connect
+## 📌 Highlights
 
-- [LinkedIn](https://linkedin.com/in/pravinraj213)
-- [GitHub](https://github.com/pravinraj213)
-- [Instagram (casual)](https://instagram.com/prav.inraj213)
-
-📬 Reach out for internships, collaborations, feedback — or just to connect as fellow learners!
+- ✅ About Me
+- ✅ Education & Skills
+- ✅ Project Showcase
+- ✅ Contact & Resume access
+- ✅ Clean, responsive UI with custom 404 page and OG image
 
 ---
 
-_This README is a reflection of my journey — always growing, just like me._
+## 🛠 Built With
+
+- **HTML**
+- **CSS**
+- **JavaScript**
+
+> No frameworks, just clean and simple code — handcrafted for performance and clarity.
+
+---
+
+## 📷 Social Preview
+
+![Social Preview](og-image.png)
+
+---
+
+## 🚀 Setup & Run Locally
+
+```bash
+git clone https://github.com/pravinraj213/pravinraj213.github.io.git
+cd pravinraj213.github.io
+# Open index.html in any browser
