@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Pravinraj P — CSBS student at Rajalakshmi Engineering College. Cloud & Cybersecurity learner, building secure, scalable solutions. View projects, resume, and connect." />
+  <meta name="keywords" content="Pravinraj, Praveenraj, Pravin Raj, Praveen Raj, Pravin, Praveen, Rajalakshmi Engineering College, CSBS, Cloud Engineer, Cybersecurity, Python Developer, GitHub, AWS, AI, Portfolio, SDE, Full Stack Developer, Engineering Student, Chennai" />
+  <meta name="author" content="Pravinraj P" />
+  <meta http-equiv="Content-Language" content="en" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://pravinraj213.github.io/" />
+  <meta name="theme-color" content="#2563eb" />
+
+  <title>Pravinraj P - Cloud & Cybersecurity Portfolio</title>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Pravinraj P | Cloud & Cybersecurity Portfolio" />
+  <meta property="og:description" content="CSBS student at Rajalakshmi Engineering College — learning Cloud, Cybersecurity, and AI. Explore projects, resume, and contact info." />
+  <meta property="og:image" content="https://pravinraj213.github.io/og-image.png" />
+  <meta property="og:url" content="https://pravinraj213.github.io/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pravinraj P | Cloud & Cybersecurity Portfolio" />
+  <meta name="twitter:description" content="Cloud & Cybersecurity learner | CSBS Student | Rajalakshmi Engineering College" />
+  <meta name="twitter:image" content="https://pravinraj213.github.io/og-image.png" />
+
+  <!-- Preload Fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Favicons -->
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <style>
+    /* Define CSS variables for consistent styling */
+    :root {
+      --primary: #2563eb;
+      /* Vibrant blue for main accents */
+      --primary-light: #3b82f6;
+      /* Lighter shade of primary */
+      --primary-dark: #1d4ed8;
+      /* Darker shade of primary */
+      --secondary: #6d28d9;
+      /* Purple accent */
+      --accent: #059669;
+      /* Subtle emerald green accent */
+      --light: #ffffff;
+      /* White for backgrounds */
+      --light-gray: #f8fafc;
+      /* Very light gray for subtle backgrounds */
+      --medium-gray: #e2e8f0;
+      /* Medium gray for borders */
+      --dark-gray: #64748b;
+      /* Dark gray for minor text */
+      --text: #1e293b;
+      /* Dark blue-gray for main text */
+      --text-light: #475569;
+      /* Lighter text color */
+      --bg: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+      /* Gradient background */
+      --card-bg: rgba(255, 255, 255, 0.95);
+      /* Slightly transparent card background */
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      /* Soft shadow */
+      --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.1);
+      /* Larger shadow on hover */
+      --border-radius: 12px;
+      /* Consistent border radius */
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      /* Smooth transition effect */
+      --font-size-base: 1rem;
+      /* Base font size */
+      --font-size-large: 2.5rem;
+      /* Large font size for headings */
+      --font-size-medium: 1.1rem;
+      /* Medium font size for paragraphs */
+      --header-height-desktop: 80px;
+      /* Header height for desktop */
+      --header-height-mobile: 70px;
+      /* Header height for mobile */
+    }
+
+    /* Universal box-sizing and reset margins/paddings */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      /* Smoother font rendering */
+    }
+
+    /* Enable smooth scrolling for anchor links */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Disable animations/transitions for users who prefer reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      * {
+        transition: none !important;
+        animation: none !important;
+      }
+    }
+
+    /* Body styling: font, background, text color, line height, initial padding for header */
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: var(--font-size-base);
+      padding-top: var(--header-height-desktop);
+      min-height: 100vh;
+      /* Ensure body takes full viewport height */
+    }
+
+    /* Wrapper for the entire page content */
+    .page-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header styling: fixed position, background, layout, shadow */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.98);
+      /* Slightly transparent white background */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      z-index: 1000;
+      /* Ensure header is above other content */
+      height: var(--header-height-desktop);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      transition: var(--transition);
+      border-bottom: 1px solid var(--medium-gray);
+    }
+
+    /* Header styling when scrolled down */
+    header.scrolled {
+      height: var(--header-height-mobile);
+      /* Shrink header on scroll */
+      padding: 0.75rem 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header title (name) styling */
+    header h1 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      /* Changed to solid primary color */
+      -webkit-background-clip: unset;
+      /* Removed webkit clip */
+      background-clip: unset;
+      /* Removed background clip */
+      background: none;
+      /* Removed background gradient */
+      animation: none;
+      /* Removed gradient animation */
+      font-weight: 600;
+      margin: 0;
+      letter-spacing: -0.5px;
+      transition: var(--transition);
+    }
+
+    /* Keyframe animation for gradient text */
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Header title size when scrolled */
+    header.scrolled h1 {
+      font-size: 1.3rem;
+    }
+
+    /* Navigation menu styling */
+    nav {
+      display: flex;
+      gap: 2rem;
+      /* Space between nav links */
+    }
+
+    /* Navigation link styling */
+    nav a {
+      text-decoration: none;
+      color: var(--text-light);
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: var(--transition);
+      letter-spacing: -0.3px;
+      position: relative;
+      padding: 0.5rem 0;
+    }
+
+    /* Navigation link hover/active state */
+    nav a:hover,
+    nav a.active {
+      color: var(--primary);
+    }
+
+    /* Underline effect for navigation links */
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: var(--transition);
+      border-radius: 2px;
+    }
+
+    /* Expand underline on hover */
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Mobile menu button styling (hidden on desktop) */
+    .mobile-menu-btn {
+      display: none;
+      /* Hidden by default */
+      background: none;
+      border: none;
+      color: var(--primary);
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .mobile-menu-btn:hover {
+      color: var(--primary-dark);
+    }
+
+    /* Hero section styling - PERFECTLY CENTERED WITH ANIMATIONS */
+    .hero {
+      min-height: calc(100vh - var(--header-height-desktop));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    /* Hero content container */
+    .hero-content {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Hero heading styling */
+    .hero h2 {
+      font-size: var(--font-size-large);
+      margin-bottom: 1.5rem;
+      color: var(--text);
+      line-height: 1.1;
+      font-weight: 600;
+      animation: fadeInUp 0.8s ease;
+    }
+
+    /* Hero heading name span styling (gradient) */
+    .hero h2 span.name {
+      background: linear-gradient(90deg, #2563eb, #6d28d9, #059669);
+      background-size: 200% auto;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      animation: gradient 8s ease infinite;
+    }
+
+    /* Hero paragraph styling */
+    .hero p {
+      font-size: var(--font-size-medium);
+      color: var(--text-light);
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: fadeInUp 0.8s ease 0.2s both;
+    }
+
+    /* Hero buttons container */
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      animation: fadeInUp 0.8s ease 0.4s both;
+    }
+
+    /* Base button styling */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.9rem 2rem;
+      background: var(--primary);
+      color: var(--light);
+      border-radius: 50px;
+      /* Pill shape */
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition);
+      border: none;
+      font-size: 1.05rem;
+      letter-spacing: -0.3px;
+      box-shadow: var(--shadow);
+    }
+
+    /* Button hover effects */
+    .btn:hover {
+      background: var(--primary-light);
+      transform: translateY(-2px);
+      /* Lift effect */
+      box-shadow: var(--shadow-hover);
+    }
+
+    /* Outline button variation */
+    .btn-outline {
+      background: transparent;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      box-shadow: none;
+    }
+
+    .btn-outline:hover {
+      background: rgba(37, 99, 235, 0.1);
+      /* Light background on hover */
+      border-color: var(--primary-light);
+      color: var(--primary-light);
+    }
+
+    /* Main content area styling */
+    main {
+      flex-grow: 1;
+      /* Allows main to expand and push footer down */
+      padding: 4rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+      /* Center main content */
+      width: 100%;
+    }
+
+    /* Section base styling: background, padding, shadow, initial animation state */
+    section {
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      opacity: 0;
+      /* Hidden initially for animation */
+      transform: translateY(20px);
+      /* Slightly moved down for animation */
+      border: 1px solid var(--medium-gray);
+    }
+
+    /* Section visible state for animation */
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Section hover effect */
+    section:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-3px);
+    }
+
+    /* Section heading (h2) styling */
+    h2 {
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      position: relative;
+      display: inline-block;
+      /* Allows ::after to work */
+    }
+
+    /* Underline effect for section headings */
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 3px;
+    }
+
+    /* Sub-heading (h3) styling */
+    h3 {
+      font-size: 1.4rem;
+      margin: 1rem 0 0.5rem;
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+
+    /* Paragraph styling */
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* Strong text styling */
+    strong {
+      color: var(--primary-dark);
+      font-weight: 500;
+    }
+
+    /* Skills section grid layout */
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    /* Individual skill card styling */
+    .skill-card {
+      background: var(--card-bg);
+      padding: 1.75rem;
+      border-radius: var(--border-radius);
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+      transition: var(--transition);
+      box-shadow: var(--shadow);
+      text-align: center;
+      border: 1px solid var(--medium-gray);
+    }
+
+    /* Skill icon styling */
+    .skill-card i {
+      font-size: 2.5rem;
+      color: var(--primary);
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: var(--transition);
+      background: var(--light-gray);
+    }
+
+    /* Skill card hover effects */
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+      background: var(--light-gray);
+    }
+
+    .skill-card:hover i {
+      background: var(--primary);
+      color: var(--light);
+      transform: scale(1.05);
+      /* Slightly enlarge icon on hover */
+    }
+
+    /* Achievements section container */
+    .achievements-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+
+    /* Individual achievement card styling */
+    .achievement-card {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      transition: var(--transition);
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--primary);
+      /* Left border for emphasis */
+      border: 1px solid var(--medium-gray);
+    }
+
+    /* Achievement card hover effects */
+    .achievement-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+      background: var(--light-gray);
+    }
+
+    /* Education section content */
+    .education-content {
+      margin-top: 1rem;
+    }
+
+    .education-details p {
+      margin-bottom: 0.75rem;
+    }
+
+    /* Contact form styling */
+    .contact-form {
+      background-color: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--medium-gray);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--medium-gray);
+      border-radius: var(--border-radius);
+      font-family: inherit;
+      font-size: 1rem;
+      transition: var(--transition);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    .form-group textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    /* Social links styling */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .social-links a {
+      color: var(--primary);
+      font-size: 1.5rem;
+      transition: var(--transition);
+    }
+
+    .social-links a:hover {
+      color: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    /* Footer styling */
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      background: var(--light);
+      color: var(--text-light);
+      font-weight: 500;
+      box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+      border-top: 1px solid var(--medium-gray);
+    }
+
+    footer p {
+      color: var(--text-light);
+      margin-bottom: 0.5rem;
+    }
+
+    /* Back to top button styling (fixed position) */
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 50px;
+      height: 50px;
+      background: var(--primary);
+      color: var(--light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      text-decoration: none;
+      opacity: 0;
+      /* Hidden initially */
+      visibility: hidden;
+      /* Prevent interaction when hidden */
+      transition: var(--transition);
+      box-shadow: var(--shadow);
+      z-index: 999;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Back to top button visible state */
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Back to top button hover effects */
+    .back-to-top:hover {
+      transform: translateY(-2px) scale(1.05);
+      background: var(--primary-light);
+      box-shadow: var(--shadow-hover);
+    }
+
+    /* Keyframe animation for fade-in effect */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* --- Responsive Adjustments for Mobile and Tablet Views --- */
+
+    /* Styles for screens up to 768px wide (typical tablets and large phones) */
+    @media (max-width: 768px) {
+      body {
+        padding-top: var(--header-height-mobile);
+        /* Adjust body padding for smaller header */
+      }
+
+      header {
+        padding: 1rem;
+        height: var(--header-height-mobile);
+        /* Ensure header height adjusts */
+      }
+
+      header h1 {
+        font-size: 1.3rem;
+        /* Adjust header title size */
+      }
+
+      /* Mobile navigation menu - hidden by default, slides down when active */
+      nav {
+        position: fixed;
+        top: var(--header-height-mobile);
+        /* Position below the header */
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.98);
+        flex-direction: column;
+        /* Stack links vertically */
+        align-items: center;
+        padding: 1.5rem;
+        gap: 1.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transform: translateY(-150%);
+        /* Start off-screen */
+        transition: transform 0.4s ease;
+        z-index: 999;
+        border-bottom: 1px solid var(--medium-gray);
+        /* Add border to nav */
+      }
+
+      nav.active {
+        transform: translateY(0);
+        /* Slide into view */
+      }
+
+      .mobile-menu-btn {
+        display: block;
+        /* Show menu button on mobile */
+      }
+
+      .hero {
+        min-height: calc(100vh - var(--header-height-mobile));
+        padding: 1rem;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero-content {
+        padding-top: 2rem;
+        text-align: left;
+      }
+
+      .hero-buttons {
+        justify-content: flex-start;
+      }
+
+      /* Make the name within the heading slightly bigger */
+      .hero h2 span.name {
+        font-size: 1.1em;
+        /* Make the span 10% larger than its parent h2 */
+      }
+
+      /* Hide the descriptive line on mobile */
+      .hero-description {
+        display: none;
+      }
+
+      .hero p {
+        margin-bottom: 3rem;
+        /* Increased margin bottom for paragraph */
+      }
+
+      /* Hero buttons stack vertically on mobile */
+      .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        /* Align buttons to the left */
+        gap: 1.25rem;
+        /* Slightly more space between stacked buttons */
+        margin-top: 1.5rem;
+        /* Space from the paragraph above */
+      }
+
+      /* Make buttons full width with a max-width for better appearance */
+      .btn {
+        width: 100%;
+        max-width: 280px;
+      }
+
+      section {
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+        /* Reduce bottom margin for sections */
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        /* Adjust section heading size */
+      }
+
+      p {
+        font-size: 1rem;
+        /* Adjust paragraph font size in sections */
+      }
+
+      /* Skills container stacks cards vertically on mobile */
+      .skills-container {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-form {
+        padding: 1.5rem;
+      }
+
+      .form-group {
+        margin-bottom: 1rem;
+      }
+    }
+
+    /* Styles for smaller mobile screens (up to 480px wide) */
+    @media (max-width: 480px) {
+      .hero {
+        min-height: calc(100vh - var(--header-height-mobile));
+        padding: 1rem;
+      }
+
+      .hero-content {
+        padding-top: 0.5rem;
+        padding-bottom: 3.5rem;
+      }
+
+      /* Make the name within the heading slightly bigger */
+      .hero h2 span.name {
+        font-size: 1.1em;
+        /* Make the span 10% larger than its parent h2 */
+      }
+
+      /* Hero paragraph (now hidden but including for completeness) */
+      .hero p {
+        font-size: 1rem;
+        /* Smaller font size for better fit */
+        line-height: 1.6;
+        /* Increased line-height for better readability/spacing */
+        text-align: left;
+        /* Ensure text is left-aligned */
+        margin-left: 0;
+        /* Remove auto margins */
+        margin-right: 0;
+        /* Remove auto margins */
+        padding: 0 1rem;
+        /* Added horizontal padding to prevent text from touching edges */
+        margin-bottom: 2.5rem;
+        /* Adjusted margin for paragraph on smaller screens */
+      }
+
+      .hero-buttons {
+        align-items: flex-start;
+        /* Align buttons to the left */
+        margin-top: 1rem;
+        /* Space from the paragraph above */
+        gap: 1rem;
+        /* Space between buttons */
+      }
+
+      section {
+        padding: 1.5rem;
+        /* Further reduce section padding */
+      }
+
+      h2 {
+        font-size: 1.6rem;
+        /* Further reduce section heading size */
+      }
+
+      /* Adjust back to top button size and position for smaller screens */
+      .back-to-top {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header>
+      <h1>Pravinraj - Portfolio</h1>
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h2>Hello, I'm <span class="name">Pravinraj</span></h2>
+        <p class="hero-description">Second-year CSBS student passionate about Cloud, Cybersecurity, and Ethical Tech.<br>
+          On a journey to learn, build, and grow — one project at a time.</p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn">Learn More</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I'm <strong>Pravinraj</strong>, a second-year student of <strong>Computer Science and Business Systems</strong> at <strong>Rajalakshmi Engineering College, Chennai</strong>, with a growing interest in <strong>Cybersecurity</strong>, <strong>Cloud Engineering</strong>, and <strong>AI applications</strong>.</p>
+        <p>I'm currently building my foundations through hands-on labs, virtual simulations, and real-world research. My focus areas include learning secure authentication, exploring AWS IAM, and understanding how AI can support ethical and human-centered tech.</p>
+        <p>I may just be starting, but I'm deeply committed to learning, contributing, and building solutions that balance both protection and innovation. When I'm not experimenting with tools or writing notes, I enjoy CTFs, following cyber threat news, and supporting peer learners.</p>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="education-content">
+          <div class="education-details">
+            <h3>Rajalakshmi Engineering College</h3>
+            <p><strong>Degree:</strong> B.Tech in Computer Science and Business Systems</p>
+            <p><strong>Current CGPA:</strong> 8.55</p>
+            <p><strong>Expected Graduation:</strong> 2028</p>
+            <p><strong>Location:</strong> Chennai, Tamil Nadu</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+          <div class="skill-card">
+            <h3>Programming</h3>
+            <p><strong>Python</strong> – Building a strong foundation in scripting and automation (Infosys Certified)</p>
+            <p><strong>C Programming</strong> – Practicing systems logic and understanding how low-level code works</p>
+            <p><strong>Data Structures & Algorithms</strong> – Learning problem-solving through LeetCode & HackerRank</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Tools & Platforms</h3>
+            <p><strong>Git & GitHub</strong> – Using version control for coursework and personal experiments</p>
+            <p><strong>TryHackMe</strong> – Exploring security basics through beginner-friendly labs</p>
+            <p><strong>AWS IAM (Learning)</strong> – Studying identity and permissions in cloud environments</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Current Focus</h3>
+            <p>Learning how different technologies connect — from code to cloud to security.</p>
+            <p>Practicing with online labs, certifications, and mini projects to discover my interests.</p>
+            <p>Interested in real-world use cases where security, scalability, and AI meet.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="achievements-container">
+          <div class="achievement-card">
+            <div class="achievement-content">
+              <h3>Reliance Foundation Undergraduate Scholar</h3>
+              <p>
+                Selected among the top 5,000 students across India for academic performance and innovation potential (2024–2028).
+              </p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-content">
+              <h3>Python Foundation Certification</h3>
+              <p>
+                Completed via Infosys Springboard – focused on Python fundamentals, syntax, and scripting basics (June 2025).
+              </p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-content">
+              <h3>Deloitte Cybersecurity Virtual Simulation</h3>
+              <p>
+                Completed Forage's simulation involving phishing detection, incident response, and policy review (July 2025).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container contact-container">
+          <h2 class="section-title">Get In Touch</h2>
+          <form class="contact-form" action="https://formsubmit.co/pravinrajp2397@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://pravinraj213.github.io/thank-you.html">
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="yourname@xyz.com">
+            </div>
+            <div class="form-group">
+              <label for="purpose">Why are you reaching out?</label>
+              <select id="purpose" name="purpose" required>
+                <option value="" disabled selected>Select a purpose</option>
+                <option value="internship">Internship Opportunity (Recruiter/Startup)</option>
+                <option value="project">Project Collaboration (Hackathon, Side Project)</option>
+                <option value="feedback">Portfolio Feedback or Suggestions</option>
+                <option value="mentorship">Offering Mentorship / Career Advice</option>
+                <option value="connect">Connecting as a Fellow Learner / Tech Enthusiast</option>
+                <option value="other">Other (General Inquiry)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/pravinraj213" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/pravinraj213" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/prav.inraj213" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Pravinraj P. All rights reserved.</p>
+      <p>Chennai, Tamil Nadu, India</p>
+      <p><br>This portfolio is a work in progress — just like me.</p>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <script>
+    // Get references to DOM elements
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('nav');
+    const backToTopBtn = document.getElementById('backToTop');
+    const header = document.querySelector('header');
+    const allNavLinks = document.querySelectorAll('nav a');
+    const allSections = document.querySelectorAll('section');
+
+    // --- Event Listeners ---
+
+    // Toggle mobile navigation menu visibility and icon
+    mobileMenuBtn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      mobileMenuBtn.innerHTML = nav.classList.contains('active') ?
+        '<i class="fas fa-times"></i>' // Change icon to 'X' when menu is open
+        :
+        '<i class="fas fa-bars"></i>'; // Change icon to 'bars' when menu is closed
+    });
+
+    // Close mobile menu when a navigation link is clicked
+    allNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (nav.classList.contains('active')) {
+          nav.classList.remove('active'); // Hide the navigation menu
+          mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>'; // Reset menu icon
+        }
+      });
+    });
+
+    // Scroll to the top of the page when the back-to-top button is clicked
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      }); // Smooth scroll to top
+    });
+
+    // Handle scroll events for header and back-to-top button
+    window.addEventListener('scroll', () => {
+      // Show/hide back-to-top button based on scroll position
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+
+      // Apply 'scrolled' class to header for visual effects
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Intersection Observer for animating sections into view on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Add 'visible' class with a slight delay for staggered animation
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, index * 150); // Stagger animation based on section order
+          observer.unobserve(entry.target); // Stop observing once visible
+        }
+      });
+    }, {
+      threshold: 0.1, // Trigger when 10% of the section is visible
+      rootMargin: '0px 0px -50px 0px' // Start animation a bit before reaching the section
+    });
+
+    // Observe each section for the fade-in animation
+    allSections.forEach(section => {
+      observer.observe(section);
+    });
+
+    // Smooth scrolling for all internal anchor links (e.g., #about)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default jump behavior
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          // Calculate scroll position, accounting for fixed header height
+          window.scrollTo({
+            top: targetElement.offsetTop - document.querySelector('header').clientHeight,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
