@@ -495,6 +495,18 @@
       /* Slightly enlarge icon on hover */
     }
 
+    /* For tablets only (768px-1024px) */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      header h1::after {
+       content: "- Portfolio"; /* Reset any previous modifications */
+    }
+  
+      header h1::after {
+       content: "" !important; /* Force remove the "- Portfolio" text */
+       display: none;
+    }
+  }
+    
     @media (max-width: 768px) {
 
   /* NEW: Tablet-specific skill grid */
