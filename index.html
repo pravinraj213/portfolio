@@ -495,17 +495,6 @@
       /* Slightly enlarge icon on hover */
     }
 
-    /* For tablets only (768px-1024px) */
-    @media (min-width: 768px) and (max-width: 1024px) {
-  header h1::after {
-    content: "" !important; /* Removes "- Portfolio" */
-  }
-  /* Optional: Adjust font size if needed */
-  header h1 {
-    font-size: 1.4rem;
-  }
-    }
-    
     @media (max-width: 768px) {
 
   /* NEW: Tablet-specific skill grid */
@@ -713,6 +702,19 @@
         /* Adjust header title size */
       }
 
+      /* Default: Show full title */
+.short-title { display: none; }
+
+/* Tablet view: Show only short title */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .full-title { display: none; }
+  .short-title { 
+    display: inline-block;
+    /* Optional: Adjust font size if needed */
+    font-size: 1.4rem;
+  }
+}
+
       /* Mobile navigation menu - hidden by default, slides down when active */
       nav {
         position: fixed;
@@ -895,7 +897,8 @@
 <body>
   <div class="page-wrapper">
     <header>
-      <h1>Pravinraj - Portfolio</h1>
+      <h1></h1><span class="full-title">Pravinraj - Portfolio</span>
+      <span class="short-title">Pravinraj</span></h1>
       <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
         <i class="fas fa-bars"></i>
       </button>
