@@ -495,11 +495,21 @@
       /* Slightly enlarge icon on hover */
     }
 
-    .skills-container .skill-card:nth-child(3) {
-      grid-column: span 2; /* Force 3rd card to span both columns */
-      max-width: 280px; /* Optional: Control width of bottom card */
-      margin: 0 auto; /* Center it horizontally */
+    @media (max-width: 768px) {
+
+  /* NEW: Tablet-specific skill grid */
+     .skills-container {
+       grid-template-columns: repeat(2, 1fr);  /* 2 columns */
+       justify-items: center;  /* Center items in grid cells */
     }
+
+  /* Force 3rd card to full width (centered below) */
+     .skills-container .skill-card:nth-child(3) {
+       grid-column: 1 / -1;  /* Span all columns */
+       max-width: 280px;     /* Optional: Control width */
+       margin: 1rem auto 0;  /* Add top margin + center */
+    }
+  }
 
     /* Achievements section container */
     .achievements-container {
