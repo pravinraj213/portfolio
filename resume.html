@@ -375,8 +375,22 @@
     <h1>Pravinraj P</h1>
     <div class="subtitle">Aspiring Cloud & Cybersecurity Engineer</div>
     <div class="contact">
-      <a href="mailto:pravinraj.2370@gmail.com"><i class="fas fa-envelope"></i> pravinraj.2370@gmail.com</a>
-      <a href="tel:+917010061207"><i class="fas fa-phone"></i> +91 7010061207</a>
+      <span id="protected-email"></span>
+<span id="protected-phone"></span>
+
+<script>
+  // Email with icon
+  document.getElementById('protected-email').innerHTML = `
+    <a href="mailto:${'pravinraj' + '.' + '2370' + '@gmail.com'}">
+      <i class="fas fa-envelope"></i> ${'pravinraj' + '.' + '2370' + '@gmail.com'}
+    </a>`;
+  
+  // Phone with icon
+  document.getElementById('protected-phone').innerHTML = `
+    <a href="tel:${'+91' + '701' + '006' + '1207'}">
+      <i class="fas fa-phone"></i> ${'+91 ' + '701' + '006' + '1207'}
+    </a>`;
+</script>
       <a href="https://pravinraj213.github.io" target="_blank"><i class="fas fa-globe"></i> pravinraj213.github.io</a>
       <a href="https://linkedin.com/in/pravinraj213" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/pravinraj213</a>
       <a href="https://github.com/pravinraj213" target="_blank"><i class="fab fa-github"></i> github.com/pravinraj213</a>
