@@ -878,13 +878,30 @@
         font-size: 1rem;
       }
     }
+
+    /* Tablet: Show only "Pravinraj" in header title */
+    @media (min-width: 601px) and (max-width: 900px) {
+      .site-title {
+        font-size: 1.35rem;
+        letter-spacing: 0;
+      }
+
+      .site-title::after {
+        content: "";
+      }
+
+      .site-title {
+        /* Hide " - Portfolio" part using a pseudo-element and data attribute */
+        /* But since text is not split, use JS below to swap text */
+      }
+    }
   </style>
 </head>
 
 <body>
   <div class="page-wrapper">
     <header>
-      <h1>Pravinraj - Portfolio</h1>
+      <h1 class="site-title">Pravinraj - Portfolio</h1>
       <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
         <i class="fas fa-bars"></i>
       </button>
@@ -1168,6 +1185,20 @@
         }
       });
     });
+
+    // Tablet mode: Change header title to "Pravinraj" only
+    function updateHeaderTitle() {
+      const title = document.querySelector('.site-title');
+      if (!title) return;
+      if (window.innerWidth >= 601 && window.innerWidth <= 900) {
+        title.textContent = "Pravinraj";
+      } else {
+        title.textContent = "Pravinraj - Portfolio";
+      }
+    }
+
+    window.addEventListener('resize', updateHeaderTitle);
+    window.addEventListener('DOMContentLoaded', updateHeaderTitle);
   </script>
 </body>
 
