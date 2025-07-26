@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Page not found - Pravinraj P's Portfolio" />
+    <title>Page Not Found | Pravinraj P</title>
+    <!-- Reusing your existing styles -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico" />
+    <style>
+      /* Reusing your existing CSS variables */
+      :root {
+        --primary: #2563eb;
+        --primary-light: #3b82f6;
+        --primary-dark: #1d4ed8;
+        --secondary: #6d28d9;
+        --accent: #059669;
+        --light: #ffffff;
+        --light-gray: #f8fafc;
+        --medium-gray: #e2e8f0;
+        --dark-gray: #64748b;
+        --text: #1e293b;
+        --text-light: #475569;
+        --bg: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+        --card-bg: rgba(255, 255, 255, 0.95);
+        --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.1);
+        --border-radius: 12px;
+        --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Error content styling */
+      .error-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .error-content {
+        background: var(--card-bg);
+        border-radius: var(--border-radius);
+        padding: 3rem;
+        max-width: 600px;
+        width: 100%;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--medium-gray);
+        margin-bottom: 2rem;
+      }
+
+      .error-code {
+        font-size: 5rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 1rem;
+        line-height: 1;
+      }
+
+      .error-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: var(--text);
+      }
+
+      .error-message {
+        color: var(--text-light);
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.9rem 2rem;
+        background: var(--primary);
+        color: var(--light);
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: var(--transition);
+        border: none;
+        font-size: 1.05rem;
+        box-shadow: var(--shadow);
+      }
+
+      .btn:hover {
+        background: var(--primary-light);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-hover);
+      }
+
+      /* Social links styling - matching your portfolio */
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .social-links a {
+        color: var(--primary);
+        font-size: 1.5rem;
+        transition: var(--transition);
+      }
+
+      .social-links a:hover {
+        color: var(--primary-dark);
+        transform: translateY(-2px);
+      }
+
+      /* Footer styling to match your portfolio */
+      footer {
+        text-align: center;
+        padding: 1.5rem;
+        background: var(--light);
+        color: var(--text-light);
+        font-weight: 500;
+        box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+        border-top: 1px solid var(--medium-gray);
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .error-content {
+          padding: 2rem;
+        }
+        
+        .error-code {
+          font-size: 4rem;
+        }
+        
+        .error-title {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .error-content {
+          padding: 1.5rem;
+        }
+        
+        .social-links {
+          gap: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-container">
+      <div class="error-content">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Lost in the Cloud?</h1>
+        <p class="error-message">
+          The page you're looking for doesn't exist or has been moved.
+          While you're here, feel free to connect with me elsewhere!
+        </p>
+        <a href="/" class="btn">
+          <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+        
+        <!-- Social Connect Buttons -->
+        <div class="social-links">
+          <a href="https://linkedin.com/in/pravinraj213" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/pravinraj213" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://instagram.com/prav.inraj213" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <span id="email-link" aria-label="Email">
+  <i class="fas fa-envelope"></i>
+</span>
+
+<noscript>
+  <p>Email: pravinrajp [dot] gmail [dot] com (enable JavaScript to click)</p>
+</noscript>
+
+<script>
+  // Obfuscate email parts
+  const user = "pravinrajp2397";
+  const domain = "gmail.com";
+  const email = user + "@" + domain;
+
+  const link = document.createElement("a");
+  link.href = "mailto:" + email;
+  link.innerHTML = '<i class="fas fa-envelope"></i>';
+
+  const container = document.getElementById("email-link");
+  container.replaceWith(link);
+</script>
+          
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <p>© 2025 Pravinraj P. All rights reserved.</p>
+      <p>Chennai, Tamil Nadu, India</p>
+      <p><br>This portfolio is a work in progress — just like me.</p>
+    </footer>
+  </body>
+</html>
