@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-    <title>Pravinraj P – Computer Science Student Portfolio | Cloud, Security, AI</title>
-    <meta name="description" content="Welcome to the official portfolio of Pravinraj P, a Computer Science and Business Systems student at Rajalakshmi Engineering College, Chennai. Explore my projects in cloud computing, cybersecurity, and web development." />
+    <title>Pravinraj P | Computer Science Portfolio</title>
+    <meta name="description" content="Portfolio of Pravinraj P, a computer science student specializing in cloud, security, and web development. Explore projects, skills, and achievements." />
     <meta name="keywords" content="Pravinraj P, Pravinraj Portfolio, Rajalakshmi Engineering College, REC Chennai, CSBS Student, Cloud Computing, Cybersecurity, Python, AWS, Student Portfolio Chennai" />
     <meta name="author" content="Pravinraj P" />
     <meta http-equiv="Content-Language" content="en" />
@@ -14,15 +14,15 @@
     <link rel="canonical" href="https://pravinraj213.netlify.app/" />
     <meta name="theme-color" content="#2563eb" />
 
-    <meta property="og:title" content="Pravinraj P – Computer Science Student Portfolio" />
-    <meta property="og:description" content="Explore projects and research in cloud, security, and AI from Pravinraj P, a CSBS student at REC Chennai." />
+    <meta property="og:title" content="Pravinraj P | Computer Science Portfolio" />
+    <meta property="og:description" content="Explore the computer science portfolio of Pravinraj P, featuring projects in cloud, security, and web development." />
     <meta property="og:image" content="https://pravinraj213.netlify.app/og-image.png" />
     <meta property="og:url" content="https://pravinraj213.netlify.app/" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Pravinraj P – Computer Science Student Portfolio" />
-    <meta name="twitter:description" content="Explore projects and research in cloud, security, and AI from Pravinraj P, a CSBS student at REC Chennai." />
+    <meta name="twitter:title" content="Pravinraj P | Computer Science Portfolio" />
+    <meta name="twitter:description" content="Explore the computer science portfolio of Pravinraj P, featuring projects in cloud, security, and web development." />
     <meta name="twitter:image" content="https://pravinraj213.netlify.app/og-image.png" />
 
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
@@ -58,7 +58,6 @@
     </script>
 
     <style>
-        /* --- ORIGINAL STYLES WITH IMPROVED ANIMATIONS --- */
         :root {
           --primary: #2563eb;
           --primary-light: #3b82f6;
@@ -72,11 +71,10 @@
           --text: #1e293b;
           --text-light: #475569;
           --bg: #f1f5f9;
-          --card-bg: rgba(255, 255, 255, 0.6); /* Glass background */
+          --card-bg: rgba(255, 255, 255, 0.6);
           --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
           --shadow-hover: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
           --border-radius: 16px;
-          /* UPDATED: Faster transition with a snappier easing function */
           --transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
           --font-size-base: 1rem;
           --font-size-large: 2.75rem;
@@ -239,7 +237,6 @@
           color: var(--text);
           line-height: 1.1;
           font-weight: 700;
-          /* UPDATED: Faster animation */
           animation: fadeInUp 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
     
@@ -259,7 +256,6 @@
           max-width: 600px;
           margin-left: auto;
           margin-right: auto;
-          /* UPDATED: Faster animation */
           animation: fadeInUp 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0.1s both;
         }
     
@@ -267,7 +263,6 @@
           display: flex;
           gap: 1rem;
           justify-content: center;
-          /* UPDATED: Faster animation */
           animation: fadeInUp 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0.2s both;
         }
     
@@ -327,7 +322,6 @@
           opacity: 0;
           transform: translateY(30px);
           border: 1px solid rgba(255, 255, 255, 0.7);
-          /* UPDATED: Faster, dedicated transition for scroll reveal */
           transition: opacity 0.5s ease-out, transform 0.5s ease-out;
         }
         section.visible {
@@ -378,7 +372,6 @@
           font-weight: 600;
         }
     
-        /* --- SKILLS LAYOUT --- */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -433,8 +426,6 @@
             color: var(--primary-dark);
         }
 
-
-        /* --- PROJECTS & RESEARCH LAYOUT --- */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -483,7 +474,6 @@
             margin-bottom: 0.75rem;
         }
         
-        /* --- ACHIEVEMENTS LAYOUT --- */
         .achievements-list {
             margin-top: 2rem;
             display: flex;
@@ -520,7 +510,6 @@
             text-decoration: underline;
         }
         
-        /* --- EDUCATION LAYOUT --- */
         .education-details {
             background: rgba(248, 250, 252, 0.7);
             padding: 2rem;
@@ -583,6 +572,26 @@
           min-height: 150px;
           resize: vertical;
         }
+        
+        .form-success-message {
+            text-align: center;
+            padding: 2.5rem;
+            background: rgba(239, 246, 255, 0.8);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--primary);
+            animation: fadeInUp 0.5s ease;
+        }
+        .form-success-message h3 {
+            color: var(--primary-dark);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .form-success-message p {
+            color: var(--text);
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
         .social-links {
           display: flex;
           justify-content: center;
@@ -651,7 +660,6 @@
           margin: 0 auto;
         }
     
-        /* UPDATED: Faster duration */
         @keyframes fadeInUp {
           from { opacity: 0; transform: translateY(20px); }
           to { opacity: 1; transform: translateY(0); }
@@ -677,7 +685,6 @@
             gap: 1.5rem;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             transform: translateY(-150%);
-            /* UPDATED: Faster slide animation */
             transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
             z-index: 999;
             border-bottom: 1px solid var(--medium-gray);
@@ -738,57 +745,6 @@
         }
         @media (min-width: 601px) and (max-width: 900px) {
           .site-title { font-size: 1.35rem; letter-spacing: 0; }
-        }
-
-        /* --- TERMINAL STYLES --- */
-        #terminal-trigger {
-            cursor: pointer;
-            margin-left: 0.5rem;
-            transition: var(--transition);
-        }
-        #terminal-trigger:hover {
-            color: var(--primary);
-        }
-        #terminal-modal {
-            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-            background: rgba(29, 41, 59, 0.8); backdrop-filter: blur(5px);
-            display: flex; align-items: center; justify-content: center; z-index: 2000;
-            visibility: hidden;
-            opacity: 0;
-            transition: visibility 0.3s, opacity 0.3s ease;
-        }
-        #terminal-modal.visible {
-            visibility: visible;
-            opacity: 1;
-        }
-        .terminal-window {
-            width: 90%; max-width: 800px; height: 80%; max-height: 600px;
-            background: #1e293b; color: #e2e8f0; border-radius: 8px;
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2);
-            display: flex; flex-direction: column; font-family: 'Courier New', monospace;
-            transform: scale(0.95);
-            transition: var(--transition);
-        }
-        #terminal-modal.visible .terminal-window {
-            transform: scale(1);
-        }
-        .terminal-header {
-            background: #334155; padding: 0.5rem 1rem; border-top-left-radius: 8px;
-            border-top-right-radius: 8px; display: flex; justify-content: space-between; align-items: center;
-        }
-        .terminal-close-btn {
-            background: #ef4444; color: white; border: none; width: 15px; height: 15px;
-            border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;
-        }
-        .terminal-body { flex-grow: 1; padding: 1rem; overflow-y: auto; line-height: 1.5; }
-        .terminal-body p { margin: 0; padding-bottom: 0.25rem; color: #e2e8f0; font-size: 1rem; }
-        .terminal-body strong { color: #60a5fa; }
-        .terminal-body a { color: #6ee7b7; text-decoration: underline; }
-        .terminal-prompt-line { display: flex; padding: 0 1rem 1rem; }
-        .terminal-prompt { color: #a78bfa; margin-right: 0.5rem; }
-        #terminal-input {
-            flex-grow: 1; background: transparent; border: none; outline: none;
-            color: #e2e8f0; font-family: inherit; font-size: inherit;
         }
     </style>
 </head>
@@ -932,8 +888,7 @@
                     <form class="contact-form" action="https://formsubmit.co/c9cb0d9442b87ad174d700c3585ff45b" method="POST">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_next" value="https://pravinraj213.github.io/thank-you.html">
-
+                        
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required placeholder="Your name">
@@ -960,6 +915,10 @@
                         </div>
                         <button type="submit" id="submit" class="btn">Send Message</button>
                     </form>
+                    <div id="form-success-message" class="form-success-message" style="display: none;">
+                        <h3>Thank You!</h3>
+                        <p>Your message has been sent. I'll get back to you as soon as possible.</p>
+                    </div>
                     <div class="social-links">
                         <a href="https://linkedin.com/in/pravinraj213" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://github.com/pravinraj213" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -971,7 +930,7 @@
 
         <footer>
             <p>© 2025 Pravinraj P. All rights reserved.</p>
-            <p>Chennai, Tamil Nadu, India <span id="terminal-trigger" title="Launch Terminal"><i class="fas fa-terminal"></i></span></p>
+            <p>Chennai, Tamil Nadu, India</p>
             <p>
                 <br>This portfolio is a work in progress — just like me.</p>
         </footer>
@@ -980,24 +939,8 @@
             <i class="fas fa-arrow-up"></i>
         </button>
     </div>
-    
-    <div id="terminal-modal">
-        <div class="terminal-window">
-            <div class="terminal-header">
-                <span>pravinraj@portfolio: ~</span>
-                <button id="close-terminal" class="terminal-close-btn">&times;</button>
-            </div>
-            <div id="terminal-body" class="terminal-body"></div>
-            <div class="terminal-prompt-line">
-                <span class="terminal-prompt">pravinraj@portfolio:~$</span>
-                <input type="text" id="terminal-input" autocomplete="off" autofocus>
-            </div>
-        </div>
-    </div>
-
 
     <script>
-        // --- ORIGINAL SCRIPT WITH UPDATED ANIMATION LOGIC ---
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const nav = document.querySelector('nav');
         const backToTopBtn = document.getElementById('backToTop');
@@ -1037,7 +980,6 @@
           }
         });
     
-        // UPDATED: Removed the setTimeout delay for a faster feel
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -1045,7 +987,7 @@
               observer.unobserve(entry.target);
             }
           });
-        }, { threshold: 0.15 }); // Slightly increased threshold
+        }, { threshold: 0.15 }); 
     
         allSections.forEach(section => {
           observer.observe(section);
@@ -1080,50 +1022,45 @@
         window.addEventListener('resize', updateHeaderTitle);
         window.addEventListener('DOMContentLoaded', updateHeaderTitle);
 
-        // --- TERMINAL LOGIC ---
-        const trigger = document.getElementById('terminal-trigger');
-        const modal = document.getElementById('terminal-modal');
-        const closeBtn = document.getElementById('close-terminal');
-        const terminalInput = document.getElementById('terminal-input');
-        const terminalBody = document.getElementById('terminal-body');
+        const contactForm = document.querySelector('.contact-form');
+        const formSuccessMessage = document.getElementById('form-success-message');
 
-        const commandHistory = {
-            help: `<p>Available commands:</p><p><strong>about</strong>, <strong>projects</strong>, <strong>skills</strong>, <strong>contact</strong>, <strong>clear</strong></p>`,
-            about: `<p>I’m <strong>Pravinraj</strong>, a second-year Computer Science and Business Systems student from Chennai.</p>`,
-            skills: `<p><strong>Programming:</strong> Python, Java, C</p><p><strong>Cloud & DBs:</strong> AWS, SQL, MongoDB</p><p><strong>Tools:</strong> Git & GitHub</p>`,
-            projects: `<p><strong>1. Ephemeral Browsing (Research)</strong> - <a href="https://doi.org/10.5281/zenodo.17066404" target="_blank">Read Paper</a></p><p><strong>2. Portfolio Website</strong> - <a href="https://github.com/pravinraj213/pravinraj213.github.io" target="_blank">View Code</a></p>`,
-            contact: `<p>Find me on <a href="https://linkedin.com/in/pravinraj213" target="_blank">LinkedIn</a> or use the contact form on the main site.</p>`,
-        };
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
 
-        function openTerminal() {
-            modal.classList.add('visible');
-            if (!terminalBody.innerHTML) {
-                printToTerminal(`<p>Welcome! Type <strong>'help'</strong> to see available commands.</p>`, false);
-            }
-            terminalInput.focus();
-        }
-        function closeTerminal() { 
-            modal.classList.remove('visible');
-        }
-        function printToTerminal(text, isCommand = true) {
-            terminalBody.innerHTML += isCommand ? `<p><span class="terminal-prompt">pravinraj@portfolio:~$</span> ${text}</p>` : text;
-            terminalBody.scrollTop = terminalBody.scrollHeight;
-        }
-        function handleCommand(command) {
-            printToTerminal(command);
-            if (command === 'clear') { terminalBody.innerHTML = ''; } 
-            else if (commandHistory[command]) { printToTerminal(commandHistory[command], false); } 
-            else { printToTerminal(`<p>Command not found: ${command}.</p>`, false); }
-        }
+            const formData = new FormData(this);
+            const action = this.getAttribute('action');
+            const submitButton = document.getElementById('submit');
+            
+            submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
 
-        trigger.addEventListener('click', openTerminal);
-        closeBtn.addEventListener('click', closeTerminal);
-        modal.addEventListener('click', (e) => { if (e.target === modal) closeTerminal(); });
-        terminalInput.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-                const command = terminalInput.value.trim().toLowerCase();
-                if (command) { handleCommand(command); terminalInput.value = ''; }
-            }
+            fetch(action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    contactForm.style.display = 'none';
+                    formSuccessMessage.style.display = 'block';
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            alert(data["errors"].map(error => error["message"]).join(", "));
+                        } else {
+                            alert('Oops! There was a problem submitting your form.');
+                        }
+                        submitButton.textContent = 'Send Message';
+                        submitButton.disabled = false;
+                    })
+                }
+            }).catch(error => {
+                alert('Oops! There was a problem submitting your form.');
+                submitButton.textContent = 'Send Message';
+                submitButton.disabled = false;
+            });
         });
     </script>
 </body>
